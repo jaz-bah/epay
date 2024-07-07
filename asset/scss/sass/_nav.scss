@@ -1,0 +1,107 @@
+.section-navbar{
+    width: 100% ;
+    height: 70px;
+    background-color: transparent;
+    margin-top: 50px;
+
+    .logo{
+
+       img{
+        margin-top: 15px;
+        width: 50%;
+        height: auto;
+        cursor: pointer;
+       }
+    }
+    .menu-toggle-btn{
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--color-dark);
+        float: right;
+        align-items: center;
+        min-height: 70px;
+        display: none;
+    }
+
+    .nav-menu{
+        float: right;
+        display: flex;
+        align-items: center;
+        min-height: 70px;
+        z-index: 1;
+
+        a{
+            color: var(--color-dark);
+            font-family: var(--font-pera);
+            margin-right: 20px;
+            font-size: 15px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover{
+                letter-spacing: 2px;
+            }
+
+            i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                color: var(--bg-color);
+                background-color: var(--color-dark);
+                cursor: pointer;
+            }
+
+            .login-button{
+                border: none;
+                background-color: var(--color-white);
+                color: var(--color-dark);
+                padding-right: 100px;
+                cursor: pointer;
+            }
+        }
+    }
+    .active{
+        right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .nav-menu{
+        position: fixed;
+        top: 120px;
+        background-color: var(--color-white);
+        width: 50%;
+        height: 100%;
+        right: -100%;
+        display: block !important;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top-left-radius: 20px;
+        transition: all 0.5s ease-in-out;
+
+        a{
+            text-align: right !important;
+            display: block !important;
+            padding-top: 10px;
+            margin-left: 10px;
+        }
+
+        i{
+            margin-left: 80% !important;
+            color: var(--bg-color);
+            background-color: var(--color-dark) !important;
+        }
+        .login-button{
+            background-color: var(--color-dark) !important;
+            color: var(--color-white) !important;
+        }
+    }
+    .menu-toggle-btn{
+        display: flex !important;
+    }
+}

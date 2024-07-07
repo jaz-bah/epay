@@ -1,0 +1,76 @@
+.section-footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .footer-div{
+        background-color: var(--color-dark);
+        width: 100%;
+        padding: 40px;
+
+        ul{
+            color: var(--color-white);
+            text-transform: uppercase;
+            font-family: var(--font-pera);
+            font-size: 10px;
+
+            li{
+                margin-top: 15px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover{
+                    letter-spacing: 5px;
+                }
+            }
+        }
+
+        h1{
+            @include heading1;
+            color: var(--color-white);
+        }
+
+        .img-box{
+            @include imgBox;
+
+            img{
+                width: 70%;
+            }
+        }
+
+        .pera1{
+            @include pera1;
+            color: var(--color-white);
+            margin-top: 20px
+        }
+
+        .pera2{
+            @include pera2;
+            color: var(--color-white);
+            font-size: 12px;
+        }
+
+        h2{
+            @include heading1;
+            color: var(--color-white);
+            font-size: 15px;
+        }
+        input{
+            @include button;
+            background-color: var(--color-white);
+            border: none;
+            padding-left: 20px;
+            padding-top: 5px;
+            color: var(--color-dark);
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        button{
+            @include button;
+            background-color: var(--bg-color);
+            color: var(--color-dark);
+            margin-top: 10px;
+        }
+    }
+
+
+}

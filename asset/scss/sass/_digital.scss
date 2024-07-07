@@ -1,0 +1,29 @@
+.section-digital{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .img-box{
+        @include imgBox;
+
+        img{
+            width: 30%;
+        }
+    }
+
+    h1{
+        @include heading1;
+        margin-top: 10px;
+    }
+
+    p{
+        @include pera2;
+    }
+
+    button{
+        @include button;
+    }
+
+    .img-box2{
+        @include imgBox;
+    }
+}

@@ -1,0 +1,47 @@
+.section-login{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('../image/Layer\ 1.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    h1{
+        @include heading1;
+        margin-bottom: 20px;
+    }
+
+    .inputs{
+        background-color: var(--color-white);
+        padding: 20px;
+        border-radius: 30px;
+        border: 3px solid #AA9332;
+        margin-bottom: 10px;
+
+        label{
+            margin-top: 10px;
+            width: 30%;
+        }
+
+        input{
+            border: none;
+            border-bottom: 2px solid var(--color-dark);
+            width: 60%;
+        }
+    }
+
+    button{
+        @include button;
+    }
+
+    .pera1{
+        @include pera1;
+        margin-top: 10px;
+    }
+
+    .pera2{
+        @include pera2;
+    }
+
+    .img-box{
+        @include imgBox;
+    }
+}

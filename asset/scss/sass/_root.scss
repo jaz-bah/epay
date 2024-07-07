@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito&display=swap');
+
+
+:root{
+
+    --color-white: #fff;
+    --color-dark: #000;
+    --bg-color: #ffd500;
+
+    --font-heading: 'Comfortaa', cursive;
+    --font-pera:  'Nunito', sans-serif;
+
+    --font-bold: ;
+    --font-semibold: ;
+    --font-bolder: ;
+
+    --font-size-normal: 15px;
+    --font-size-medium: 16px;
+    --font-size-learge: 25px;
+
+    @media screen and (max-width: 768px){
+        --font-size-normal: ;
+        --font-size-medium: ;
+        --font-size-learge: ;
+    }
+    @media screen and (max-width: 320px){
+        --font-size-normal: ;
+        --font-size-medium: ;
+        --font-size-learge: ;
+    }
+}
+
+@mixin heading1 {
+    font-size: var(--font-size-learge);
+    font-family: var(--font-heading);
+    color: var(--color-dark);
+    font-weight: bold;
+}
+@mixin pera1 {
+    font-family: var(--font-pera);
+    font-size: var(--font-size-normal);
+    color: var(--color-dark);
+}
+@mixin pera2 {
+    font-family: var(--font-pera);
+    font-size: var(--font-size-medium);
+    color: var(--color-dark);
+    text-transform: uppercase;
+}
+@mixin button {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: var(--font-heading);
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover{
+        background-color: #515A5A;
+    }
+}
+@mixin imgBox{
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+}
+.opacity0{
+    opacity: 0;
+}

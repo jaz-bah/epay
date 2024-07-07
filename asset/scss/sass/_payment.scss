@@ -1,0 +1,32 @@
+.section-payment{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('../image/Layer\ 2.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    .img-box{
+        @include imgBox;
+    }
+
+    h1{
+        @include heading1;
+        text-align: center;
+        margin-top: 160px;
+    }
+
+    .pera1{
+        @include pera1;
+        text-align: center;
+    }
+
+    button{
+        @include button;
+    }
+
+    .pera2{
+        @include pera2;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

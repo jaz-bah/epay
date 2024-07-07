@@ -1,0 +1,17 @@
+.section-support{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h1{
+        @include heading1;
+        margin-top: 50px;
+    }
+
+    p{
+        @include pera2;
+    }
+
+    .img-box{
+        @include imgBox;
+    }
+}

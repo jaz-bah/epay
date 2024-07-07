@@ -1,0 +1,36 @@
+.section-shop{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../image/Layer\ 8.png');
+    background-repeat: no-repeat;
+
+    h1{
+        @include heading1;
+        text-align: center;
+    }
+
+    .img-box{
+        @include imgBox;
+
+        img{
+            margin-left: 30%;
+            width: 40%;
+        }
+    }
+
+    .pera1{
+        @include pera1;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    button{
+        @include button
+    }
+
+    .pera2{
+        @include pera2;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

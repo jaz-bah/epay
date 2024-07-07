@@ -1,0 +1,24 @@
+.section-app{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('../image/Layer\ 3.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    h1{
+        @include heading1;
+    }
+
+    button{
+        @include button;
+        margin-top: 10px;
+    }
+
+    .pera2{
+        @include pera2;
+        margin-top: 10px;
+    }
+
+    .img-box{
+        @include imgBox;
+    }
+}
